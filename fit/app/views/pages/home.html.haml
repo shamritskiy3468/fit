@@ -1,0 +1,10 @@
+%h1 Welcom to FiT
+.jumbotron
+  %h1.display-4 Hello, world!
+  %p.lead This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+  %hr.my-4
+  %a{:class => "btn btn-primary btn-lg btn-block", :role => "button"} Register as a Doctor!
+  %hr.my-4
+  / %a{:class => "btn btn-secondary btn-lg btn-block", :role => "button", path: new_patient_registration_path } Register as a Patient!
+
+  = link_to 'Register as a Patient', new_patient_registration_path
