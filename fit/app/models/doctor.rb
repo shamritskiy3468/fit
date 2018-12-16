@@ -1,3 +1,3 @@
 class Doctor < User
-	has_one :doctor_info
+  has_one :doctor_info
 end
