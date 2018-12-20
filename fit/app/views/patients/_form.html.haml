@@ -1,4 +1,13 @@
 = form_with(model: patient, local: true) do |form|
+  / %label{:for => "first_name"}> Phone
+  / = f.text_field :first_name
+
+  / %label{:for => "last_name"}> Phone
+  / = f.text_field :last_name
+
+  / %label{:for => "phone"}> Phone
+  / = f.text_field :phone
+%h1 sobaka
   - if patient.errors.any?
     #error_explanation
       %h2
