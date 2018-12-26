@@ -12,6 +12,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
+    binding.pry
     @user = User.new
   end
 
@@ -22,10 +23,13 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
+    binding.pry
     @user = User.new(user_params)
+    @user.errors.messages
 
     respond_to do |format|
       if @user.save
+        redirect_to "pages#home"
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
@@ -63,6 +67,7 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
+      binding.pry
       params.fetch(:user, {})
     end
 end
