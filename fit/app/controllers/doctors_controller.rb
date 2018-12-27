@@ -55,7 +55,8 @@ class DoctorsController < ApplicationController
       @doctor = Doctor.find(params[:id])
     end
 
-    def user_params
-      params.fetch(:doctor, {})
+    def doctor_params
+      binding.pry
+      params.require(:user).permit(doctor_info_attributes: [:speciality, :success_price, :failure_price])
     end
 end

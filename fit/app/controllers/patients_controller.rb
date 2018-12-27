@@ -62,7 +62,7 @@ class PatientsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def user_params
-      params.fetch(:patient, {})
+    def patient_params
+      params.require(:user).premit(patient_info_attributes: [:age, :weight, :height, :aim_weight])
     end
 end
