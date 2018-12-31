@@ -14,11 +14,12 @@
         / %button{ :class => "btn btn-outline-success my-2 my-sm-0", :type => "submit" } Search
         %ul{ :class => "nav nav-pills nav-fill" }
           %li.nav-item
-            %a{:class=>"nav-link active", :path => pages_home_path }Home
+            = link_to 'Home', pages_home_path, class: "nav-link active"
+            / %a{:class=>"nav-link active",  } Home
           %li.nav-item
-            %a{ :class=>"nav-link",  :href=>"#"}Longer nav link
+            %a{ :class=>"nav-link ",  :href=>"#"}Longer nav link
           %li.nav-item
-            %a{ :class=>"nav-link", :href=>"#"}Link
+            %a{ :class=>"nav-link ", :href=>"#"}Link
           %li.nav-item
             %a{:class=>"nav-link", :href=>"#"}Disabled
     .container

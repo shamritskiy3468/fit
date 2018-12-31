@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-    binding.pry
+    #binding.pry
   end
 
   # POST /users
@@ -30,7 +30,7 @@ class UsersController < ApplicationController
     binding.pry
     respond_to do |format|
       if @user.save
-        redirect_to "pages#home"
+        redirect_to "pages#about"
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
@@ -68,7 +68,7 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      binding.pry
-      params.require(:user).permit(:first_name, :last_name, :phone, :password, :email, :type)
+      params.require(:user).permit(:password, :encrypted_password, :email, :type)
+      # params.require(:user).permit(:password, :encrypted_password, :email)
     end
 end
