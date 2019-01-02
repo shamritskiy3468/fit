@@ -22,5 +22,9 @@
             %a{ :class=>"nav-link ", :href=>"#"}Link
           %li.nav-item
             %a{:class=>"nav-link", :href=>"#"}Disabled
+          - if user_signed_in? 
+            = link_to 'Sign Out', destroy_user_session_path, class: "nav-link active form-inline pull-xs-right"
+          - else
+            = link_to 'Sign In', new_user_session_path, class: "nav-link active"
     .container
       = yield

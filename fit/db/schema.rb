@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 2018_12_16_170234) do
     t.string "first_name"
     t.string "last_name"
     t.string "phone"
-    t.string "type", null: false
+    t.string "type"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

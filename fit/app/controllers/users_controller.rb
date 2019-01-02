@@ -12,7 +12,6 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    binding.pry
     @user = User.new
   end
 
@@ -27,10 +26,9 @@ class UsersController < ApplicationController
     binding.pry
     @user = User.new(user_params)
     @user.errors.messages
-    binding.pry
     respond_to do |format|
       if @user.save
-        redirect_to "pages#about"
+        redirect_to 
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
@@ -41,14 +39,17 @@ class UsersController < ApplicationController
   end
 
   def update
-    respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-        format.json { render :show, status: :ok, location: @user }
+    if @user.update(user_params)
+      case @user.type 
+      when "Doctor"
+        redirect_to edit_doctor_path(@user)
+      when "Patient"  
+        redirect_to edit_patient_path(@user)
       else
-        format.html { render :edit }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        render :edit
       end
+    else
+      render :edit
     end
   end
 
@@ -68,7 +69,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:password, :encrypted_password, :email, :type)
-      # params.require(:user).permit(:password, :encrypted_password, :email)
+      params.permit(:type)
     end
 end

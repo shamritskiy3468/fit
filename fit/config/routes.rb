@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  resources :patients
+  resources :doctors
+
   namespace :admin do
-      resources :users
       resources :doctor_infos
       resources :patient_infos
       resources :patients
@@ -13,7 +15,7 @@ Rails.application.routes.draw do
   get 'pages/about'
   get 'pages/contacts'
 
-  devise_for :users
+  devise_for :users, controllers: { registrations: "registrations"}
 
   resources :users
   # devise_for :patients
