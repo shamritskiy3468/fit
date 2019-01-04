@@ -65,6 +65,9 @@ class DoctorsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def doctor_params
-      params.require(:user).permit(doctor_info_attributes: [:speciality, :success_price, :failure_price, :aim_weight])
+      binding.pry
+      params.permit(:first_name, :last_name, :phone)
     end
 end
+
+#, doctor_info_attributes: [:speciality, :success_price, :failure_price, :aim_weight]

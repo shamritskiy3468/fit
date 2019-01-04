@@ -7,8 +7,23 @@
       %ul
         - @doctor.errors.full_messages.each do |message|
           %li= message
+  .form-group
+    .field
+      = form.label :first_name
+      %br/
+      = text_field_tag 'first_name', nil,  placeholder: 'Enter Your first name', maxlength: 20, class: 'form-control'
+  .form-group
+    .field
+      = form.label :last_name
+      %br/
+      = text_field_tag 'last_name', nil, placeholder: 'Enter Your last name', maxlength: 40, class: 'form-control'
+  .form-group
+    .field
+      = form.label :phone
+      %br/
+      = text_field_tag :phone, nil, placeholder: '+1-541-754-3010', class: 'form-control'
   = form.fields_for :doctor_info  do |ff|
-    %h1 SUKA
+    - binding.pry
     .form-group
       .field
         = ff.label :speciality
