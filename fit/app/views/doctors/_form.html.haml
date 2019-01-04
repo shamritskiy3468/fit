@@ -1,0 +1,24 @@
+= form_with(model: @doctor, local: true) do |form|
+  - if @doctor.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@doctor.errors.count, "error")
+        prohibited this doctor from being saved:
+      %ul
+        - @doctor.errors.full_messages.each do |message|
+          %li= message
+  = form.fields_for :doctor_info  do |ff|
+    %h1 SUKA
+    .form-group
+      .field
+        = ff.label :speciality
+        %br/
+        = ff.text_field :speciality, class: 'form-control'
+    .form-group
+      .field
+        = ff.label :success_price
+        %br/
+        = ff.text_field :success_price, options_for_select(160..300), class: 'form-control'
+  .actions
+    = form.submit "Registrate", class: "btn btn-success"
+  %br

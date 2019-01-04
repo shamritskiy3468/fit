@@ -5,18 +5,25 @@ class DoctorsController < ApplicationController
     @doctor= Doctor.all
   end
 
+  # GET /users/1
+  # GET /users/1.json
   def show
   end
 
+  # GET /users/new
   def new
     @doctor = Doctor.new
+    #binding.pry
+    #@doctor.doctor_info.build
   end
 
+  # GET /users/1/edit
   def edit
   end
 
+  # POST /users
+  # POST /users.json
   def create
-    binding.pry
     @doctor = Doctor.new(doctor_params)
 
     respond_to do |format|
@@ -51,12 +58,13 @@ class DoctorsController < ApplicationController
   end
 
   private
+    # Use callbacks to share common setup or constraints between actions.
     def set_doctor
       @doctor = Doctor.find(params[:id])
     end
 
+    # Never trust parameters from the scary internet, only allow the white list through.
     def doctor_params
-      binding.pry
-      params.require(:user).permit(doctor_info_attributes: [:speciality, :success_price, :failure_price])
+      params.require(:user).permit(doctor_info_attributes: [:speciality, :success_price, :failure_price, :aim_weight])
     end
 end

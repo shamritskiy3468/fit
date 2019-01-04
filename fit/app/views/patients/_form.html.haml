@@ -1,18 +1,23 @@
-= form_with(model: user, local: true) do |form|
-  - binding.pry
-  - if user.errors.any?
+= form_with(model: @patient, local: true) do |form|
+  - if @patient.errors.any?
     #error_explanation
       %h2
-        = pluralize(user.errors.count, "error")
-        prohibited this user from being saved:
+        = pluralize(@patient.errors.count, "error")
+        prohibited this patient from being saved:
       %ul
-        - user.errors.full_messages.each do |message|
+        - @patient.errors.full_messages.each do |message|
           %li= message
-  .form-group
-    .field
-      = form.label :type
-      %br/
-      = select_tag :type, options_for_select(16..60), class: 'form-control'
+  = form.fields_for :patient_info do |ff|
+    .form-group
+      .field
+        = ff.label :weight
+        %br/
+        = ff.select_tag :weight, options_for_select(16..30), class: 'form-control'
+    .form-group
+      .field
+        = ff.label :height
+        %br/
+        = ff.select_tag :height, options_for_select(16..30), class: 'form-control'
   .actions
-    = form.submit "Choose", class: "btn btn-success"
+    = form.submit "Registrate", class: "btn btn-success"
   %br
