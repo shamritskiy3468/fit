@@ -7,17 +7,42 @@
       %ul
         - @patient.errors.full_messages.each do |message|
           %li= message
-  = form.fields_for :patient_info do |ff|
+  .form-group
+    .field
+      = form.label :first_name
+      %br/
+      = text_field_tag 'first_name', nil,  placeholder: 'Enter Your first name', maxlength: 20, class: 'form-control'
+  .form-group
+    .field
+      = form.label :last_name
+      %br/
+      = text_field_tag 'last_name', nil, placeholder: 'Enter Your last name', maxlength: 40, class: 'form-control'
+  .form-group
+    .field
+      = form.label :phone
+      %br/
+      = text_field_tag :phone, nil, placeholder: '+1-541-754-3010', class: 'form-control'
+  = form.fields_for :patient_info  do |ff|
     .form-group
       .field
-        = ff.label :weight
+        = ff.label :age
         %br/
-        = ff.select_tag :weight, options_for_select(16..30), class: 'form-control'
+        = select_tag 'age', options_for_select(18..60), class: 'form-control'
     .form-group
       .field
         = ff.label :height
         %br/
-        = ff.select_tag :height, options_for_select(16..30), class: 'form-control'
+        = text_field_tag 'height', nil, placeholder: 'Enter Your Height', class: 'form-control'
+    .form-group
+      .field
+        = ff.label :weight
+        %br/
+        = select_tag 'weight', options_for_select(40..160), class: 'form-control'
+    .form-group
+      .field
+        = ff.label :aim_weight
+        %br/
+        = select_tag 'aim_weight', options_for_select(40..100), class: 'form-control'
   .actions
     = form.submit "Registrate", class: "btn btn-success"
   %br

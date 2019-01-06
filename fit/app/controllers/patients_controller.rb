@@ -5,34 +5,11 @@ class PatientsController < ApplicationController
     @patient= Patient.all
   end
 
-  # GET /users/1
-  # GET /users/1.json
   def show
   end
 
-  # GET /users/new
-  def new
-    @patient = Patient.new
-  end
-
-  # GET /users/1/edit
   def edit
-  end
-
-  # POST /users
-  # POST /users.json
-  def create
-    @patient = Patient.new(patient_params)
-
-    respond_to do |format|
-      if @patient.save
-        format.html { redirect_to @patient, notice: 'patient was successfully created.' }
-        format.json { render :show, status: :created, location: @patient }
-      else
-        format.html { render :new }
-        format.json { render json: @patient.errors, status: :unprocessable_entity }
-      end
-    end
+    @patient.build_patient_info
   end
 
   def update
@@ -56,13 +33,11 @@ class PatientsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_patient
       @patient = Patient.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def patient_params
-      params.require(:user).premit(patient_info_attributes: [:age, :weight, :height, :aim_weight])
+      params.permit(:first_name, :last_name, :phone, patient_info_attributes: [:height, :weight, :aim_wight, :age])
     end
 end

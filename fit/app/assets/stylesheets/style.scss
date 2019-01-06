@@ -1,0 +1,1262 @@
+/*
+ *Copyright (c) 2017
+ *------------------------------------------------------------------
+ *[Master Stylesheet]
+ *
+ *Project:	Skateboard
+ *Version:	1.0
+ *-------------------------------------------------------------------
+/*--------- Body Strat -------
+
+body
+  font-family: 'Open Sans', sans-serif
+  font-size: 16px
+  line-height: 1.5
+  color: #777777
+  background-color: #1f2532
+  -webkit-font-smoothing: antialiased
+
+/*--------- Body End -------
+/*---------- Normal Css Start -------
+
+a
+  color: #777777
+  text-decoration: none
+  &:hover
+    color: #535465
+    text-decoration: none
+  &:focus
+    color: #535465
+    text-decoration: none
+    outline: none
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-family: 'Comfortaa', cursive
+  font-weight: 600
+  line-height: 1.1
+  color: #222222
+
+img
+  max-width: 100%
+
+input, textarea, select, button, input:focus, textarea:focus, select:focus, button:focus
+  outline: none
+  box-shadow: none
+
+.skt_toppadder10
+  padding-top: 10px
+
+.skt_toppadder20
+  padding-top: 20px
+
+.skt_toppadder30
+  padding-top: 30px
+
+.skt_toppadder40
+  padding-top: 40px
+
+.skt_toppadder50
+  padding-top: 50px
+
+.skt_toppadder60
+  padding-top: 60px
+
+.skt_toppadder70
+  padding-top: 70px
+
+.skt_toppadder80
+  padding-top: 80px
+
+.skt_toppadder90
+  padding-top: 90px
+
+.skt_toppadder100
+  padding-top: 100px
+
+.skt_bottompadder10
+  padding-bottom: 10px
+
+.skt_bottompadder20
+  padding-bottom: 20px
+
+.skt_bottompadder30
+  padding-bottom: 30px
+
+.skt_bottompadder40
+  padding-bottom: 40px
+
+.skt_bottompadder50
+  padding-bottom: 50px
+
+.skt_bottompadder60
+  padding-bottom: 60px
+
+.skt_bottompadder70
+  padding-bottom: 70px
+
+.skt_bottompadder80
+  padding-bottom: 80px
+
+.skt_bottompadder90
+  padding-bottom: 90px
+
+.skt_bottompadder100
+  padding-bottom: 100px
+
+.skt_padderboth120
+  padding: 120px 0px
+
+/*---------- Normal css End -------
+/*---------- Slider Css Start -------
+
+.skt_slider_wrapper
+  float: left
+  width: 100%
+  background-image: url(../../HTML/images/content/healthy.jpg)
+  background-position: 100% 0%
+  background-repeat: no-repeat
+  background-attachment: fixed
+  padding: 70px 0px
+
+.skt_logo
+  float: left
+  width: 100%
+  padding-top: 14px
+
+.skt_menu
+  float: left
+  width: 100%
+  position: relative
+  ul
+    float: right
+    width: auto
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      float: left
+      &:last-child a
+        padding-right: 0px
+      a
+        display: block
+        text-transform: capitalize
+        color: #ffffff
+        font-weight: 500
+        padding: 25px 25px
+        position: relative
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+        &:after
+          content: "|"
+          position: absolute
+          top: 24px
+          right: -4px
+      &:last-child a:after
+        display: none
+      &:hover a, a.active
+        color: #f44336
+        background-color: transparent
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+
+.skt_menu_btn
+  display: none
+
+.menu_fixed
+  position: fixed
+  z-index: 1000
+  padding: 0px 0px
+  -moz-box-shadow: 0px -5px 20px
+  -webkit-box-shadow: 0px -5px 20px
+  box-shadow: 0px -5px 20px
+
+.skt_slider_text
+  float: left
+  width: 100%
+  text-align: center
+  padding: 250px 0px
+  h1
+    float: left
+    width: 100%
+    font-size: 80px
+    color: #ffffff
+    margin: 0px
+    text-transform: uppercase
+  h2
+    float: left
+    width: 100%
+    font-size: 80px
+    color: #ff7600
+    margin: 0px
+    letter-spacing: 15px
+    text-transform: uppercase
+  p
+    float: left
+    width: 100%
+    margin: 0px
+    font-size: 20px
+    color: #ffffff
+    font-family: 'Comfortaa', cursive
+
+/*---------- Slider Css End -------
+/*---------- Welcome Css Start -------
+
+.skt_welcome_wrapper
+  float: left
+  width: 100%
+
+.skt_welcome_infotext
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  p
+    float: left
+    width: 100%
+    margin-bottom: 30px
+    color: #ffffff
+
+.skt_heading
+  float: left
+  width: 100%
+  text-align: left
+  margin-bottom: 50px
+  h1
+    float: left
+    width: 100%
+    font-size: 45px
+    color: #ffffff
+    margin: 0px
+    text-transform: uppercase
+    span
+      color: #f44336
+
+.skt_welcome_infoimg
+  float: left
+  width: 100%
+  text-align: center
+  img
+    display: inline-block
+
+.skt_btn
+  display: inline-block
+  height: 50px
+  line-height: 47px
+  padding: 0px 20px
+  min-width: 150px
+  background-color: #f44336
+  color: #ffffff
+  text-transform: capitalize
+  border: 2px solid #f44336
+  border-radius: 50px
+  text-align: center
+  position: relative
+  z-index: 1
+  overflow: hidden
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+  &:hover
+    background-color: transparent
+    color: #000000
+    border: 2px solid #f44336
+    outline: none
+    box-shadow: none
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  &:focus
+    background-color: #ffffff
+    color: #000000
+    border: 2px solid #f44336
+    outline: none
+    box-shadow: none
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 100%
+    background-color: #ffffff
+    border-radius: 50px
+    z-index: -1
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  &:hover:after
+    right: 0
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+
+/*---------- Welcome Css End -------
+/*---------- Services Css Start -------
+
+.skt_services_wrapper
+  float: left
+  width: 100%
+  background-image: url(http://placehold.it/1920X1080)
+  background-position: 100% 0%
+  background-repeat: no-repeat
+  background-size: cover
+  .col-lg-6
+    padding: 0px
+
+.skt_service_infotext
+  float: left
+  width: 100%
+  background-color: #273044
+  padding: 80px 0px 50px 40px
+  ul
+    float: left
+    width: 65%
+    margin: 0px
+    padding: 0px
+    li
+      float: left
+      width: 50%
+      list-style: none
+
+.skt_service_infobox
+  float: left
+  width: 100%
+  text-align: left
+  margin-bottom: 30px
+  padding-right: 20px
+  img
+    float: left
+  h4
+    float: left
+    width: 100%
+    margin: 20px 0px 10px 0px
+    color: #f44336
+    font-size: 20px
+    text-transform: capitalize
+  p
+    float: left
+    width: 100%
+    margin: 0px
+    color: #ffffff
+
+/*---------- Services Css End -------
+/*---------- Event Css Start -------
+
+.skt_event_wrapper
+  float: left
+  width: 100%
+  background-color: #1f2532
+
+.skt_event_slider
+  float: left
+  width: 100%
+  text-align: center
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+  .owl-theme
+    .owl-nav
+      position: absolute
+      top: 50%
+      margin-top: -20px
+      width: 100%
+    .owl-dots
+      display: none
+    .owl-nav [class*='owl-']
+      color: #ffffff
+      background: #38435c
+      border-radius: 100%
+      width: 45px
+      height: 45px
+      line-height: 43px
+      font-size: 28px
+      padding: 0px
+      -webkit-transition: all 0.3s
+      -moz-transition: all 0.3s
+      -ms-transition: all 0.3s
+      -o-transition: all 0.3s
+      transition: all 0.3s
+      &:hover
+        background: #f44336
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+  .owl-carousel .owl-nav
+    .owl-next
+      position: absolute
+      right: -100px
+    .owl-prev
+      position: absolute
+      left: -100px
+
+.skt_event_slider_box
+  display: inline-block
+  width: auto
+  position: relative
+  overflow: hidden
+  margin-bottom: 30px
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+  &:after
+    content: ""
+    position: absolute
+    top: 80%
+    left: 0px
+    right: 0px
+    bottom: 0px
+    background-color: #f44336
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  &:hover:after
+    top: 0%
+    background-color: rgba(244, 67, 54, 0.83)
+    padding-top: 200px
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+
+.skt_event_slider_box_img
+  float: left
+  width: 100%
+  img
+    display: inline-block
+
+.skt_event_slider_box:hover .skt_event_slider_box_text
+  top: 50%
+  margin-top: -110px
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+
+.skt_event_slider_box_text
+  position: absolute
+  top: 80%
+  left: 0px
+  right: 0px
+  bottom: 0px
+  text-align: center
+  padding-top: 30px
+  z-index: 1
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+  h4
+    float: left
+    width: 100%
+    margin: 0px 0px 10px 0px
+    color: #ffffff
+    text-transform: capitalize
+    font-size: 20px
+  h5
+    float: left
+    width: 100%
+    margin: 0px 0px 20px 0px
+    color: #ffffff
+    font-size: 18px
+    text-transform: capitalize
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+    i
+      padding-right: 5px
+  .skt_btn
+    margin-top: 15px
+    border: 1px solid #ffffff
+
+.skt_event_single
+  float: left
+  width: 100%
+
+.skt_event_single_box
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  img
+    display: inline-block
+  h1
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 0px
+  h3
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 0px
+    margin-bottom: 25px
+    text-transform: capitalize
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 20px
+  span
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-bottom: 10px
+    text-transform: capitalize
+    i
+      color: #f44336
+      padding-right: 5px
+      font-size: 18px
+
+/*---------- Event Css End -------
+/*---------- Products Css Start -------
+
+.skt_products_wrapper
+  float: left
+  width: 100%
+  background-image: url(../../HTML/images/content/orangen-102_1920x1080.jpeg)
+  background-repeat: no-repeat
+  background-position: 100% 100%
+  background-attachment: fixed
+  background-size: cover
+
+.skt_products_details
+  float: left
+  width: 100%
+  text-align: center
+  margin-bottom: 40px
+  h4
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 30px
+    margin-bottom: 5px
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 0px
+  span
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-bottom: 20px
+
+.skt_products_single
+  float: left
+  width: 100%
+
+.skt_products_single_box
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  text-align: center
+  img
+    display: inline-block
+    margin-bottom: 50px
+  h1
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 0px
+    small
+      color: #ffffff
+  h3
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 0px
+    margin-bottom: 25px
+    text-transform: capitalize
+    span
+      color: #f44336
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-top: 20px
+  span i
+    color: #f44336
+    padding-right: 5px
+    font-size: 18px
+
+/*---------- Products Css End -------
+/*---------- Gallery Css Start -------
+
+.skt_gallery_wrapper
+  float: left
+  width: 100%
+  background-color: #1f2532
+  text-align: center
+  &.light_bg
+    background-color: #273044
+
+.skt_gallery_details
+  display: inline-block
+  width: auto
+  text-align: center
+  position: relative
+  overflow: hidden
+  margin-bottom: 30px
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  -ms-transition: all 0.3s
+  -o-transition: all 0.3s
+  transition: all 0.3s
+  &:after
+    content: ""
+    position: absolute
+    left: 0px
+    right: 0px
+    bottom: 0px
+    top: 100%
+    background-color: rgba(244, 67, 54, 0.83)
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  &:hover:after
+    top: 0%
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  .skt_btn
+    position: absolute
+    top: 100%
+    left: 0
+    right: 0
+    width: 150px
+    margin: 0px auto
+    border: 1px solid #ffffff
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  &:hover .skt_btn
+    top: 50%
+    margin-top: -25px
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+  img
+    display: inline-block
+
+/*---------- Gallery Css End -------
+/*---------- Testimonial Css End -------
+
+.skt_testimonial_wrapper
+  float: left
+  width: 100%
+  background-image: url(http://placehold.it/1920X1080)
+  background-repeat: no-repeat
+  background-position: 100% 100%
+  background-attachment: fixed
+  background-size: cover
+
+.skt_testimonial_slider
+  float: left
+  width: 100%
+  .owl-theme
+    .owl-nav.disabled + .owl-dots
+      margin-top: 50px
+    .owl-dots .owl-dot
+      span
+        margin: 5px
+        background: #ffffff
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+      &.active span, &:hover span
+        background: #f44336
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+
+.skt_testimonial_details
+  float: right
+  width: 88%
+  border: 2px solid #f44336
+  position: relative
+  img
+    position: absolute
+    top: 50%
+    left: -65px
+    margin-top: -65px
+    border: 2px solid #f44336
+    border-radius: 100%
+    width: 130px !important
+    height: 130px !important
+
+.skt_testimonial_text
+  float: left
+  width: 100%
+  padding: 10px 10px 10px 80px
+  h4
+    float: left
+    width: 100%
+    font-size: 20px
+    color: #ffffff
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+
+/*---------- Testimonial Css End -------
+/*---------- Footer Css Start -------
+
+.skt_footer_top_wrapper
+  float: left
+  width: 100%
+  background-color: #1f2532
+
+.skt_footer_logo
+  float: left
+  width: 100%
+  text-align: left
+  img
+    display: inline-block
+
+.skt_footer_social
+  float: left
+  width: 100%
+  text-align: right
+  padding-top: 5px
+  ul
+    float: right
+    width: auto
+    margin: 0px
+    padding: 0px
+    li
+      float: left
+      width: auto
+      list-style: none
+      margin-left: 5px
+      a
+        float: left
+        width: 40px
+        height: 40px
+        line-height: 40px
+        text-align: center
+        color: #f44336
+        background-color: #ffffff
+        border-radius: 100%
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+        &:hover
+          color: #ffffff
+          background-color: #f44336
+          -webkit-transition: all 0.3s
+          -moz-transition: all 0.3s
+          -ms-transition: all 0.3s
+          -o-transition: all 0.3s
+          transition: all 0.3s
+
+.skt_footer_bottom_wrapper
+  float: left
+  width: 100%
+  background-color: #273044
+
+.skt_footer_title
+  float: left
+  width: 100%
+  h4
+    float: left
+    width: 100%
+    font-size: 20px
+    color: #ffffff
+    padding-bottom: 10px
+    margin: 0px 0px 30px 0px
+    text-transform: uppercase
+    border-bottom: 2px solid #f44336
+
+.skt_footer_contact
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  ul
+    float: left
+    width: 100%
+    margin: 0px
+    padding: 0px
+    li
+      list-style: none
+      float: left
+      width: 100%
+      margin-bottom: 20px
+      color: #ffffff
+      i
+        color: #f44336
+        padding-right: 5px
+        font-size: 18px
+
+.skt_footer_story
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+    margin-bottom: 20px
+
+.skt_footer_event
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  ul
+    float: left
+    width: 100%
+    margin: 0px
+    padding: 0px
+    li
+      list-style: none
+      float: left
+      width: 100%
+      margin-bottom: 10px
+      a
+        float: left
+        width: auto
+        color: #ffffff
+        -webkit-transition: all 0.3s
+        -moz-transition: all 0.3s
+        -ms-transition: all 0.3s
+        -o-transition: all 0.3s
+        transition: all 0.3s
+        &:hover
+          color: #f44336
+          -webkit-transition: all 0.3s
+          -moz-transition: all 0.3s
+          -ms-transition: all 0.3s
+          -o-transition: all 0.3s
+          transition: all 0.3s
+
+.skt_footer_instagram
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  ul
+    float: left
+    width: 100%
+    margin: 0px
+    padding: 0px
+    li
+      list-style: none
+      float: left
+      width: 31.4%
+      margin: 0px 5px 5px 0px
+      a
+        display: inline-block
+        width: auto
+        position: relative
+        overflow: hidden
+        img
+          display: inline-block
+        &:hover:after
+          top: 0%
+          -webkit-transition: all 0.3s
+          -moz-transition: all 0.3s
+          -ms-transition: all 0.3s
+          -o-transition: all 0.3s
+          transition: all 0.3s
+        &:after
+          content: ""
+          position: absolute
+          left: 0px
+          right: 0px
+          bottom: 0px
+          top: 100%
+          background-color: rgba(244, 67, 54, 0.83)
+          -webkit-transition: all 0.3s
+          -moz-transition: all 0.3s
+          -ms-transition: all 0.3s
+          -o-transition: all 0.3s
+          transition: all 0.3s
+        img
+          float: left
+          width: 82px
+          height: 82px
+
+.skt_copyright_wrapper
+  float: left
+  width: 100%
+  background-color: #1f2532
+  text-align: center
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+    margin: 0px
+    a
+      color: #f44336
+      font-weight: 600
+
+/*---------- Footer Css End -------
+/*---------- Breadcrumbs Css Start -------
+
+.skt_breadcrumbs_wrapper
+  float: left
+  width: 100%
+  background-image: url(http://placehold.it/1920X1080)
+  background-repeat: no-repeat
+  background-position: 100% 100%
+  background-attachment: fixed
+  background-size: cover
+  padding-top: 70px
+
+.skt_breadcrumbs_text
+  float: left
+  width: 100%
+  text-align: left
+  margin: 0
+  padding: 150px 0px
+  h1
+    float: left
+    width: 100%
+    font-size: 45px
+    color: #ffffff
+    margin: 0px
+    text-transform: uppercase
+    span
+      color: #f44336
+
+/*---------- Breadcrumbs Css End -------
+/*---------- Counter Css Start -------
+
+.skt_timer_wrapper
+  float: left
+  width: 100%
+  background-image: url(http://placehold.it/1920X1080)
+  background-repeat: no-repeat
+  background-position: 100% 100%
+  background-attachment: fixed
+  background-size: cover
+
+.skt_timer_heading
+  float: left
+  width: 100%
+  text-align: center
+  h1
+    float: left
+    width: 100%
+    font-size: 55px
+    color: #ffffff
+    margin: 0px
+    text-transform: uppercase
+    span
+      color: #f44336
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+
+.skt_timer_box
+  float: left
+  width: 100%
+
+.syotimer
+  float: left
+  width: 100%
+  margin: 50px 0px
+  padding: 0px
+  text-align: center
+
+.syotimer-cell
+  display: inline-block
+  margin: 0px
+
+.syotimer-cell__value
+  float: left
+  width: 100%
+  font-size: 55px
+  color: #ffffff
+  line-height: 55px
+
+.syotimer-cell__unit
+  float: left
+  width: 100%
+  font-size: 28px
+  text-transform: capitalize
+  color: #ffffff
+
+#simple-timer .syotimer-cell_type_day, #periodic-timer_period_days .syotimer-cell_type_hour, #layout-timer_only-seconds .syotimer-cell_type_second, #layout-timer_mixed-units .syotimer-cell_type_minute
+
+/*---------- Counter Css End -------
+/*---------- Contact Css Start -------
+
+.skt_contact_wrapper
+  float: left
+  width: 100%
+  background-color: #273044
+
+.skt_contact_info
+  float: left
+  width: 100%
+  text-align: center
+  h1
+    float: left
+    width: 100%
+    color: #ffffff
+    margin: 0px 0px 50px 0px
+
+.skt_contact_details
+  float: left
+  width: 100%
+  text-align: center
+  margin-bottom: 50px
+  i
+    display: inline-block
+    width: 50px
+    height: 50px
+    line-height: 50px
+    text-align: center
+    background-color: #f44336
+    color: #ffffff
+    border-radius: 100%
+    margin-bottom: 15px
+  p
+    float: left
+    width: 100%
+    color: #ffffff
+
+.skt_contact_map
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  iframe
+    float: left
+    width: 100%
+    height: 450px
+
+.skt_contact_form
+  float: left
+  width: 100%
+  margin-bottom: 30px
+  input
+    float: left
+    width: 100%
+    border: none
+    background-color: #ffffff
+    height: 50px
+    padding: 0px 15px
+    margin-bottom: 20px
+  textarea
+    float: left
+    width: 100%
+    border: none
+    background-color: #ffffff
+    height: 50px
+    padding: 0px 15px
+    margin-bottom: 20px
+    height: auto
+    padding: 15px
+
+/*---------- Contact Css End -------
+/*---------- Responsive Css Start -------
+@media (max-width: 1650px)
+  .skt_service_infotext ul
+    width: 100%
+
+@media (max-width: 1200px)
+  .skt_service_infotext ul
+    width: 100%
+  .skt_event_slider .owl-carousel .owl-nav
+    .owl-prev
+      left: 0px
+    .owl-next
+      right: 0px
+
+@media (min-width: 992px) and (max-width: 1199px)
+  .skt_service_infobox
+    padding-right: 40px
+  .skt_event_slider_box_text
+    padding-top: 20px
+  .skt_event_single_box
+    padding-top: 0px
+
+@media (min-width: 768px) and (max-width: 991px)
+  .skt_menu ul li a
+    padding: 25px 14px
+  .skt_breadcrumbs_text
+    padding: 80px 0px
+  .skt_heading, .skt_event_single_box
+    padding-top: 0px
+  .skt_slider_text
+    padding: 100px 0px
+    h1, h2
+      font-size: 65px
+  .skt_testimonial_details
+    width: 90%
+  .skt_footer_instagram ul li
+    width: 46%
+  .skt_event_slider_box_text
+    padding-top: 10px
+
+@media (max-width: 767px)
+  .menu_fixed
+    position: initial
+  .skt_menu_btn
+    display: block
+    float: none
+    position: absolute
+    top: 20px
+    right: 15px
+    border: none
+    width: 40px
+    height: 30px
+    font-size: 16px
+    color: #ffffff
+    background-color: #f44336
+    border-radius: 3px
+    &:hover, &:focus
+      outline: none
+      border: none
+      box-shadow: none
+      text-shadow: none
+  .skt_main_menu_wrapper
+    z-index: 2
+    position: fixed
+    left: 0px
+    top: 0px
+    bottom: 0px
+    background-color: #f44336
+    -webkit-transform: translateX(-100%)
+    -moz-transform: translateX(-100%)
+    -ms-transform: translateX(-100%)
+    -o-transform: translateX(-100%)
+    transform: translateX(-100%)
+    -webkit-transition: all 0.3s
+    -moz-transition: all 0.3s
+    -ms-transition: all 0.3s
+    -o-transition: all 0.3s
+    transition: all 0.3s
+    width: 300px
+    &.skt_main_menu_hide
+      -webkit-transform: translateX(0%)
+      -moz-transform: translateX(0%)
+      -ms-transform: translateX(0%)
+      -o-transform: translateX(0%)
+      transform: translateX(0%)
+      -webkit-transition: all 0.3s
+      -moz-transition: all 0.3s
+      -ms-transition: all 0.3s
+      -o-transition: all 0.3s
+      transition: all 0.3s
+  .skt_menu ul
+    width: 100%
+    li
+      width: 100%
+      a
+        padding: 10px
+        border-bottom: 1px solid #f5f5f5
+        color: #ffffff
+        &:after
+          display: none
+        &.active
+          color: #f44336
+          background-color: #ffffff
+  .skt_header_info
+    padding-right: 55px
+  .skt_menu ul li:hover a
+    background-color: #ffffff
+  .skt_slider_text
+    padding: 100px 0px
+    h1, h2
+      font-size: 45px
+  .skt_event_slider_box_text
+    padding-top: 10px
+  .skt_service_infotext
+    padding: 80px 20px 50px 30px
+    ul li
+      width: 100%
+  .skt_footer_logo
+    text-align: center
+  .skt_footer_social
+    text-align: center
+    padding-top: 15px
+    ul
+      float: none
+      display: inline-block
+  .skt_testimonial_details
+    width: 100%
+    img
+      top: 0
+      left: 0
+      right: 0
+      margin: 0px auto
+      margin-top: -65px
+  .skt_testimonial_text
+    padding: 80px 10px 10px 10px
+  .skt_testimonial_slider .item
+    float: left
+    width: 100%
+    padding-top: 65px
+  .skt_service_infobox
+    padding-right: 0px
+  .skt_breadcrumbs_text
+    padding: 60px 0px
+  .skt_timer_heading h1
+    font-size: 45px
+
+@media (min-width: 480px) and (max-width: 767px)
+
+@media (max-width: 479px)
+  .skt_slider_text h2
+    font-size: 35px
+    letter-spacing: 0px
+  .skt_service_infotext
+    padding: 80px 15px 50px 15px
+  .skt_event_slider_box_text
+    padding-top: 50px
+  .skt_event_slider_box:after
+    top: 85%
+  .skt_heading h1, .skt_breadcrumbs_text h1, .skt_timer_heading h1
+    font-size: 35px
+
+@media (max-width: 380px)
+  .skt_main_menu_wrapper
+    width: 200px
+  .skt_event_slider_box_text
+    padding-top: 15px
+  .skt_event_slider_box:after
+    top: 80%
